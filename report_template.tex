@@ -1,0 +1,48 @@
+\title{Characterization Report for RNAME}
+
+\date{\today}
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+
+\begin{document}
+\maketitle
+
+\section{DH-Parameters}\label{dh-parameters}
+The following table lists the Denavit-Harternberg Parameters for this "CONFIG" serial robot manipulator:
+
+\[
+DHPARAM
+\]
+
+\section{Forward Kinematics}\label{forward kinematics}
+The transformation matrix $ _0^NUMT $ describes the position and orientation of the end effector frame with respect to the base frame, as a function of the joint angles and link lengths:
+
+\[
+_0^NUMT =
+TRANSMAT
+\]
+
+\section{Equations of Motion}\label{equations of motion}
+The vector $ ^0v_NUM $ describes the translational velocity of the end effector with respect to the base frame, as a function of the joint velocities. 
+
+\[
+LINV
+\]
+
+The vector $ ^0w_NUM $ describes the rotational velocity of the end effector with respect to the base frame, as a function of the joint velocities. 
+
+\[
+ROTV
+\]
+
+\section{Jacobian}\label{Jacobian}
+The matrix $ J $ is the Jacobian that relates joint velocities to end-effector velocity, as described in the frame of the end effector:
+
+\[
+J = 
+JACOB
+\]
+
+\end{document}
+
