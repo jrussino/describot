@@ -31,11 +31,11 @@ function describot(varargin)
 %   - saveVars: Whether or not to save characterization variables to a file.
 %       default = 'true'
 %   - generateReport: Whether or not to generate a LaTeX-formatted report.
-%       default = 'true'
+%       default = 'false'
 %   - buildFunctions: Whether or not to build robot matlab functions.
-%       default = 'true'
+%       default = 'false'
 %   - verbose: If true, displays progress and results while running.
-%       default = 'true'
+%       default = 'false
 %
 %
 %   Joseph A. Russino 12/6/2009
