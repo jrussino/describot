@@ -1,0 +1,22 @@
+## describot - Matlab functions for characterizing serial robot manipulators #
+
+Set up symbolic variables for any of the variable joint parameters and link lengths. Then create an Nx4 matrix "dh_parameters", which contains the DH Parameters for the robot, and a string "configuration", which lists the joint types from base to end effector (R for revolute, P for prismatic). Finally, call descrobot.m as follows:
+
+describot(dh_parameters,configuration,'OPTION 1','VALUE 1',...,'OPTION N', 'VALUE N');
+
+The available options and their default values are:
+- robotName: A name for the robot, to be used in file names and report.
+        default = generic name formed by 'robot' + date string
+- saveVars: Whether or not to save characterization variables to a file.
+        default = 'true'
+- generateReport: Whether or not to generate a LaTeX-formatted report.
+        default = 'false'
+- verbose: If true, displays progress and results while running.
+        default = 'false'
+
+
+The files describe_SCARA.m and describe_SCORBOT.m are provided as examples.
+
+If generateReport is set to "true", the program will save a LaTeX-formatted report to a file named "{robotName} Report.tex"
+
+
